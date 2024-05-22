@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            // Loop through all keys in local storage
+            for (let i = 0; i < localStorage.length; i++) {
+                // Get the key name
+                let key = localStorage.key(i);
+            
+                // Get the value associated with the key
+                let value = localStorage.getItem(key);
+            
+                // Log the key and value
+                console.log(key, value);
+            }
+
+            // Get the value associated with the 'name' key
+let name = localStorage.getItem('name');
+
+// Log the value
+console.log(name);
+    </script>
+    </body>
+</html>
